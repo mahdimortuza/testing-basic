@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "math.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest --reporter verbose --run"
   },
   "keywords": [],
   "author": "",
