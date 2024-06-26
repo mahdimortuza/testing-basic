@@ -5,3 +5,5 @@ export function add(numbers) {
     }
     return sum;
 }
+
+const returnStrLength = str => str.length

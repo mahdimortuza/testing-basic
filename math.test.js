@@ -86,5 +86,5 @@ it('should throw an error if multiple arguments are provided', () => {
     const resultFn = () => {
         add(1,2,3)
     }
-expect(resultFn).toThrow()
+expect(resultFn).toThrow(/is not iterable/i)
 })
