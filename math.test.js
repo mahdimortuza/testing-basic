@@ -5,9 +5,9 @@ import { add } from './math'
 // AAA pattern (better way to write test)
 // a === arrange
 // a === actions
-// a === assertion
+// a === assertion (expected result)
 
-// ------------------------------ video 1-3 ----------------------------------------
+// ------------------------------ video 1-3 ---------------------------------------- //
 
 // test case - 1
 it('should return the correct sum if an array of number is provided', () =>{
@@ -82,9 +82,9 @@ it('should throw an error if no argument is passed', () =>{
 
 
 // multiple arguments
-it('should throw an error if multiple argument is provided', () =>{
+it('should throw an error if multiple arguments are provided', () => {
     const resultFn = () => {
-        add(1,2,3),
-    }, 
-    expect(resultFn).toThrow()
-}) 
+        add(1,2,3)
+    }
+expect(resultFn).toThrow()
+})
