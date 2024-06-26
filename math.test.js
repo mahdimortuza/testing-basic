@@ -55,7 +55,7 @@ it('should provide correct sum if an array numeric string is provided', () =>{
 
 
 
-// ------------------------------ video 4 ----------------------------------------
+// ------------------------------ video 4  half ----------------------------------------
 
 // test case - 4  (throwing error)
 it('should throw an error if no argument is passed', () =>{
@@ -88,3 +88,4 @@ it('should throw an error if multiple arguments are provided', () => {
     }
 expect(resultFn).toThrow(/is not iterable/i)
 })
+
