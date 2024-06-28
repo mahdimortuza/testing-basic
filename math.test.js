@@ -1,12 +1,6 @@
 import { expect, it } from 'vitest'
 import { add } from './math'
 
-
-// AAA pattern (better way to write test)
-// a === arrange
-// a === actions
-// a === assertion (expected result)
-
 // ------------------------------ video 1-3 ---------------------------------------- //
 
 // test case - 1
