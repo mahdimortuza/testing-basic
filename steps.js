@@ -21,4 +21,19 @@ describe("functionName", ()=>{})
 * beforeEach -> runs before every test starts running
 * afterEach -> runs after every test starts running
 
+
+4. ---------- concurrent test -> a concept which runs tests paralally not one after another
+
+* it.concurrent
+
+
+5. ---------- test double, mock and spice
+
+* test double -> when we make an object like the original object and use the replica instead 
+the original for testing purpose  
+
+* mock is a test double object replaces the real object or function in a predictable way
+
+* spies is a test double object that records information about how a function is called
+
  * /
