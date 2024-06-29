@@ -15,4 +15,10 @@ describe("functionName", ()=>{})
 * promise(modern way)
 
 
+4. ---------- vitest has 4 hooks to use in testing purpose
+* beforeAll
+* afterAll
+* beforeEach
+* afterEach
+
  * /

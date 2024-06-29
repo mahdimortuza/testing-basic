@@ -1,24 +1,24 @@
 import CryptoJS from 'crypto-js';
 
-
-export function encryptMessage(message, key, callback)=> {
-    const encryptedMessage = CryptoJS.AES.encrypt(message, key).toString()
-    callback(encryptedMessage)
+export function encryptMessage(message, key, callback) {
+    const encryptedMessage = CryptoJS.AES.encrypt(message, key).toString();
+    callback(encryptedMessage);
 }
 
-export  function encryptMessagePromise(message, key) {
-    return new Promise((resolve, reject)=> {
+export function encryptMessagePromise(message, key) {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const encryptedMessage = CryptoJS.AES.encrypt(message, key).toString()
-            if(encryptedMessage){
-                resolve(encryptedMessage)
-            }else{
-                reject( new Error('Failed to encrypt message'))
+            const encryptedMessage = CryptoJS.AES.encrypt(message, key).toString();
+            if (encryptedMessage) {
+                resolve(encryptedMessage);
+            } else {
+                reject(new Error('Failed to encrypt message'));
             }
-        } , 2000)
-    })
+        }, 2000);
+    });
 }
 
+// Uncomment this section for manual testing
 // const message = {
 //     name: "Abdul",
 //     password: '123456'
@@ -30,6 +30,6 @@ export  function encryptMessagePromise(message, key) {
 //     console.log(encryptedMessage)
 // })
 
-// encryptMessagePromise(JSON.stringify(message), secretKey, ).then(
+// encryptMessagePromise(JSON.stringify(message), secretKey).then(
 //     (encryptedMessage) => console.log(encryptedMessage)
 // )
