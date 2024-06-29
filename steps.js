@@ -16,9 +16,9 @@ describe("functionName", ()=>{})
 
 
 4. ---------- vitest has 4 hooks to use in testing purpose
-* beforeAll
-* afterAll
-* beforeEach
-* afterEach
+* beforeAll -> runs before all the tests start running
+* afterAll -> runs after all the tests start running
+* beforeEach -> runs before every test starts running
+* afterEach -> runs after every test starts running
 
  * /
